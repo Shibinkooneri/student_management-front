@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+<div class="row justify-content-center" >
+    <div class="col-2" >
+        <div class="col-3 card m-2 " style="width: 18rem;box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);" *ngFor="let i of data" >
+            <div class="card-body">
+              <h5 class="card-title">{{i.name}}</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b>Enroll.date: </b>{{i.Enrollment_Date}}</li>
+              <li class="list-group-item"><b>Phone      : </b>{{i.Number}}</li>
+              <li class="list-group-item"><b>email      : </b>{{i.Email}}</li>
+              <li class="list-group-item"><b>age        : </b>{{i.age}}</li>
+              <li class="list-group-item"><b>Course     : </b>{{i.course}}</li>
+            </ul>
+          </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+<h3 class="text-info text-center">Add Student</h3>
+
+<form action="" class="container " [formGroup]="stuform" (ngSubmit)="submitted()">
+<table class="table mt-4">
+    <tr>
+        <td><b>Name</b></td>
+        <td><input type="text" class="form-control " placeholder="Name" formControlName="name" ></td>
+
+    </tr>
+    <tr>
+        <td><b>Email</b></td>
+        <td><input type="email" class="form-control" placeholder="Email" formControlName="email" ></td>
+    </tr>
+    <tr>
+        <td><b>age</b></td>
+        <td><input type="number" class="form-control" placeholder="Age" formControlName="age" ></td>
+    </tr>
+    <tr>
+        <td><b>Phone</b></td>
+        <td><input type="number" class="form-control" placeholder="Mobile Number" formControlName="phone" ></td>
+    </tr>
+    <tr>
+        <td><b>Course</b></td>
+        <td><input type="text" list="courses" class="form-control" placeholder="Course"  formControlName="course" ></td>
+        <datalist id="course">
+            <option value="python">
+            <option value="PHP">
+          </datalist>
+    </tr>
+    <tr>
+        <td><b>Date</b></td>
+        <td><input type="date" class="form-control" placeholder="Date" formControlName="date" ></td>
+       
+    </tr>
+
+    <tr>
+        <td><button type="submit" class="btn btn-success">Submit</button></td>
+    </tr>
+    
+
+        
+        
+</table>
+</form>
